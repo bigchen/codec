@@ -441,11 +441,11 @@ unsigned char * bits_getbuf(T_BitStream *buf)
     return buf->buffer;
 }
 
-unsigned int bits_getbit(T_BitStream *buf, unsigned char n) /*待优化*/
+unsigned int bits_getbit(T_BitStream *buf, unsigned char n)
 {
     unsigned short firstbit, firstbyte, lastbit, lastbyte;
     unsigned char offset1, offset2, offset;
-    int i;   /*注意不是unsigned int*/
+    int i;
     unsigned int r = 0;
     unsigned char count = 0;      /*1-4*/
     unsigned char bytes[8] = {0};
