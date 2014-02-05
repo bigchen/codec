@@ -29,36 +29,36 @@ unsigned int getintslice(unsigned int value, unsigned char begin, unsigned char 
 
 /*byte stream*/
 typedef struct tagT_ByteStream {
-	unsigned char  *buffer;
-	unsigned short totallen;
-	unsigned short curbyte;  /*current byte index*/
-	unsigned short error;
-	unsigned short reserved;
+    unsigned char  *buffer;
+    unsigned short totallen;
+    unsigned short curbyte;  /*current byte index*/
+    unsigned short error;
+    unsigned short reserved;
 } T_ByteStream;
 
 typedef struct tagT_InputByteStream {
-	T_ByteStream bytes;
+    T_ByteStream bytes;
 } T_InputByteStream;
 
 typedef struct tagT_OutputByteStream {
-	T_ByteStream bytes;
+    T_ByteStream bytes;
 } T_OutputByteStream;
 
 /*bit stream*/
 typedef struct tagT_BitStream {
-	unsigned char  *buffer;
-	unsigned short totallen;
-	unsigned short curbyte; /*current byte index*/
-	unsigned short curbit;  /*current bit index*/
-	unsigned short error;
+    unsigned char  *buffer;
+    unsigned short totallen;
+    unsigned short curbyte; /*current byte index*/
+    unsigned short curbit;  /*current bit index*/
+    unsigned short error;
 } T_BitStream;
 
 typedef struct tagT_InputBitStream {
-	T_BitStream bits;
+    T_BitStream bits;
 } T_InputBitStream;
 
 typedef struct tagT_OutputBitStream {
-	T_BitStream bits;
+    T_BitStream bits;
 } T_OutputBitStream;
 
 /*input byte stream function*/
